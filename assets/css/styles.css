@@ -220,8 +220,8 @@ section#about, section#menu, section#reservation {
 }
 
 section img {
-	width: 60%;
-	min-width: 300px;
+	width: 100%;
+	min-width: 150px;
 }
 
 #menu .img_container {
@@ -233,7 +233,7 @@ section img {
 
 #menu img {
 	width: 100%;
-	min-width: 50px;
+	min-width: 10px;
 }
 
 .align_end {
@@ -550,8 +550,8 @@ p#arrow {
 
 .zoom {
   transition: transform .2s; /* Animation */
-  width: 130px;
-  height: 200px;
+  width: 200px;
+  height: 600px;
 }
 
 .zoom:hover {
