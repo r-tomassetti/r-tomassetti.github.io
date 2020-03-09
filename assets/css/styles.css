@@ -116,6 +116,13 @@ nav a.active {
 	font-size: 60px;
 }
 
+.highlightlittle {
+	color: #d3a261;
+	font-family: 'Allura', cursive, Calibri, sans-serif;
+	text-transform: none;
+	font-size: 30px;
+}
+
 .brand, .topic {
 	letter-spacing: 15px;
 	margin-top: -30px;
@@ -206,7 +213,7 @@ section#about, section#menu, section#reservation {
 }
 
 .img_container {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -373,53 +380,53 @@ p#arrow {
 	.divider {
 		height: 400px;
 	}
-	
+
 	#copyright p {
 		font-size: 10px;
 	}
-	
+
 	#info {
 		flex-flow: column nowrap;
 	}
-	
+
 	#locations, div#hours {
 		width: 100%;
 		padding: 0;
 		text-align: center;
 	}
-	
+
 	div#locations, .address_container {
 		flex-flow: column nowrap;
 	}
-	
+
 	div#hours {
 		margin-top: 30px;
 	}
-	
+
 	div#locations {
 		margin-top: 20px;
 	}
-	
+
 	.address1 {
 		padding-right: 0;
 	}
 }
 
 @media all and (max-width: 700px) {
-	
+
 	nav {
 		display: none;
 	}
-	
+
 	#open_menu.show, #close_menu.show {
 		display: block;
 		z-index: 5;
 	}
-	
+
 	#logo {
 		z-index: 5;
 	}
-	
+
 	.container.show_menu {
 		width: 100%;
 		height: 100vh;
@@ -434,8 +441,8 @@ p#arrow {
 		background-color: rgba(0, 0, 0, .9);
 		align-items: flex-start;
 	}
-	
-	nav.show_menu { 
+
+	nav.show_menu {
 		position: absolute;
 		height: 100vh;
 		width: 100vw;
@@ -444,13 +451,13 @@ p#arrow {
 		justify-content: center;
 		align-items: center;
 		/* because the parent container has some padding, we need to get it out */
-		margin: -10px 0 0 -40px;		
+		margin: -10px 0 0 -40px;
 	}
-	
+
 	nav.show_menu a {
 		margin-bottom: 10px;
 	}
-	
+
 	nav.show_menu a:nth-of-type(5) {
 		margin-right: 10px;
 	}
@@ -458,46 +465,46 @@ p#arrow {
 }
 
 @media all and (max-width: 767px) {
-	
+
 	section#about, section#menu, section#reservation {
 		margin-top: 20px;
 		margin-bottom: 20px;
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.content, .img_container {
-		width: 100%;	
+		width: 100%;
 	}
-	
+
 	section#about {
 		margin-bottom: 40px;
 	}
-	
+
 	section#menu {
 		margin-top: 40px;
 	}
-	
+
 	section#reservation {
 		margin-bottom: 60px;
 	}
-	
+
 	.open_container div:nth-of-type(2) {
 		margin-top: 20px;
 	}
-	
+
 	#locations {
 		align-self: flex-start;
 	}
-	
+
 	.open_container {
 		flex-flow: column nowrap;
 	}
-	
+
 	#info {
 		justify-content: center;
 	}
-	
+
 	#hours {
 		width: 28%;
 		padding-left: 20%;
@@ -508,12 +515,12 @@ p#arrow {
 	#copyright p {
 		font-size: 12px;
 	}
-	
+
 	#copyright {
 		flex-flow: column nowrap;
 		padding: 25px 0;
 	}
-	
+
 	#copyright div {
 		width: 80%;
 		text-align: center;
@@ -531,13 +538,22 @@ p#arrow {
 	.open_container div:nth-of-type(3) {
 		width: 100%;
 	}
-	
+
 	.address2, .open_container div:nth-of-type(3) {
 		margin-top: 20px;
 	}
-	
+
 	#info {
 		padding: 40px 0;
 	}
 }
 
+.zoom {
+  transition: transform .2s; /* Animation */
+  width: 130px;
+  height: 200px;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
