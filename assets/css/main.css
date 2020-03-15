@@ -1620,6 +1620,85 @@ input, select, textarea {
 
 		}
 
+		.address_container, .open_container {
+			margin-top: 20px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+		}
+
+		.address1 {
+	padding-right: 30px;
+}
+
+/* Media queries */
+
+@media all and (max-width: 575px) {
+	.divider {
+		height: 400px;
+	}
+
+	#copyright p {
+		font-size: 10px;
+	}
+
+	#info {
+		flex-flow: column nowrap;
+	}
+
+	#locations, div#hours {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	div#locations, .address_container {
+		flex-flow: column nowrap;
+	}
+
+	div#hours {
+		margin-top: 30px;
+	}
+
+	div#locations {
+		margin-top: 20px;
+	}
+
+	.address1 {
+		padding-right: 0;
+	}
+}
+
+#info {
+	display: flex;
+	justify-content: space-between;
+	min-height: 200px;
+}
+
+#info h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+#info p {
+	font-size: 13px;
+}
+
+#info > div {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+#hours {
+	width: 50%;
+}
+
+#locations {
+	width: 35%;
+}
+
 /* Footer */
 
 	#footer {
